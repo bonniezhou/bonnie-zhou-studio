@@ -1,9 +1,11 @@
-import './App.css';
+import './NavBar.css';
+import { IconButton } from './Components';
 
 function NavBar() {
   return (
-    <div>
+    <div className='navBar'>
       NavBar
+      {IconButton('menu')}
     </div>
   );
 }

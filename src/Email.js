@@ -1,5 +1,3 @@
-import './App.css';
-
 function Email() {
   return (
     <div>

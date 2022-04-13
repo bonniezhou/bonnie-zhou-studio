@@ -1,21 +1,4 @@
-:root {
-  --light-orange: #faefe1;
-  --light-pink: #eee3e7;
-  --accent-orange: #eeb76f;
-  --accent-pink: #c8417f;
-  --accent-blue: #3051e5;
-  --dark-saturated: #07073d;
-  --dark-muted: #1f1f29;
-}
-
-body {
-  height: 100%;
-  color: var(--light-orange);
-  background-color: var(--dark-muted);
-
-  font-family: 'Questrial', 'Quicksand', sans-serif;
-  line-height: 1.3;
-}
+@import './Constants.scss';
 
 h1 {
   font-family: 'Alice', 'Lora', serif;
@@ -39,18 +22,29 @@ h3 {
 button {
   padding: .5rem .75rem;
   background: none;
-  border: 1px solid var(--accent-orange);
+  border: 1px solid $accent-orange;
   border-radius: .25rem;
 
   font-family: 'Raleway', 'Quicksand', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--accent-orange);
+  color: $accent-orange;
+}
+
+.iconButton {
+  font-family: 'Material Icons';
+  border: none;
+  border-radius: 100%;
+  padding: .5rem;
+
+  &:hover {
+    background-color: rgba(#4B00B5, .3);
+  }
 }
 
 .divider {
   width: 50vw;
   height: 0;
-  border-bottom: 2px solid var(--light-orange);
+  border-bottom: 2px solid $light-orange;
   margin: 1rem;
 }

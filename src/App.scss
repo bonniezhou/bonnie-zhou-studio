@@ -1,0 +1,10 @@
+@import './Constants.scss';
+
+body {
+  height: 100%;
+  color: $light-orange;
+  background-color: $dark-muted;
+
+  font-family: 'Questrial', 'Quicksand', sans-serif;
+  line-height: 1.3;
+}
