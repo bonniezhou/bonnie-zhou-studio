@@ -3,17 +3,31 @@ import './Components.scss';
 function Components() {
   return (
     <div>
-      <h1>H1 — Title</h1>
-      <h2>H2 — Subheader</h2>
-      <h3>H3 — Special text</h3>
-      {Button('Button')}
-      <p>Body text</p>
+      <div className='brandColors'>
+        <div className='lightOrange'></div>
+        <div className='lightBlue'></div>
+        <div className='accentOrange'></div>
+        <div className='accentPink'></div>
+        <div className='darkBlue'></div>
+        <div className='darkViolet'></div>
+      </div>
+      <h1>H1 — Title (Alice)</h1>
+      <h2>H2 — Subheader (Raleway)</h2>
+      <h3>H3 — Special text (Alice)</h3>
+      {Button('Button (Raleway)')}
+      <p>Body text (Questrial)</p>
       <Divider/>
 
+      {/* <h3>
+        Artwork for expressing the sensuality, movement, 
+        and beauty of the human body. Inspired by 
+        my love of dance, nature and lingerie.
+      </h3> */}
+
       <h3>
-      Artwork for expressing the sensuality, movement, 
-      and beauty of the human body. Inspired by 
-      my love of dance, nature and lingerie.
+        Artwork for the dreamer. The young at heart, wild and free. Endless Saturdays and lazy Sundays. Coming to peace with chaos. Friend groups and after parties. A beautiful organic mess.
+        <br /><br />
+        Inspired by a love of dance, plants, and music.
       </h3>
       {Button('Shop the Collection')}
       <p>

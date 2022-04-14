@@ -1,5 +1,35 @@
 @import './Constants.scss';
 
+.brandColors {
+  display: flex;
+
+  div {
+    width: 20px;
+    height: 20px;
+    margin: 0 4px;
+    border: 1px solid black;
+
+    &.lightOrange {
+      background-color: $light-orange;
+    }
+    &.lightBlue {
+      background-color: $light-blue;
+    }
+    &.accentOrange {
+      background-color: $accent-orange;
+    }
+    &.accentPink {
+      background-color: $accent-pink;
+    }
+    &.darkBlue {
+      background-color: $dark-blue;
+    }
+    &.darkViolet {
+      background-color: $dark-violet;
+    }
+  }
+}
+
 h1 {
   font-family: 'Alice', 'Lora', serif;
   font-weight: 500;
@@ -14,31 +44,41 @@ h2 {
 }
 
 h3 {
+  max-width: 55vw;
   font-family: 'Alice', 'Lora', serif;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 button {
+  cursor: pointer;
   padding: .5rem .75rem;
   background: none;
-  border: 1px solid $accent-orange;
+  border: none;
   border-radius: .25rem;
-
   font-family: 'Raleway', 'Quicksand', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
   color: $accent-orange;
+  background-color: $dark-blue;
+  transition: color $short-animation-duration $standard-easing,
+    background-color $short-animation-duration $standard-easing;
+
+  &:hover {
+    color: $dark-blue;
+    background-color: $accent-orange;
+  }
 }
 
 .iconButton {
   font-family: 'Material Icons';
-  border: none;
   border-radius: 100%;
   padding: .5rem;
+  background: none;
+  transition: background-color $short-animation-duration $standard-easing;
 
   &:hover {
-    background-color: rgba(#4B00B5, .3);
+    background-color: $accent-orange;
   }
 }
 
