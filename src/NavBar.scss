@@ -1,0 +1,12 @@
+.navBar {
+  box-sizing: border-box;
+  padding: .75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    align-items: center;
+  }
+}

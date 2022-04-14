@@ -53,11 +53,13 @@ h3 {
 button {
   cursor: pointer;
   padding: .5rem .75rem;
+  margin: .5rem;
   background: none;
   border: none;
   border-radius: .25rem;
   font-family: 'Raleway', 'Quicksand', sans-serif;
   font-weight: 600;
+  font-size: 1rem;
   text-transform: uppercase;
   color: $accent-orange;
   background-color: $dark-blue;
@@ -70,12 +72,15 @@ button {
   }
 }
 
-.iconButton {
-  font-family: 'Material Icons';
-  border-radius: 100%;
-  padding: .5rem;
+.menuButton {
   background: none;
-  transition: background-color $short-animation-duration $standard-easing;
+}
+
+.iconButton {
+  font-family: 'Material Icons Outlined';
+  border-radius: 100%;
+  padding: .75rem;
+  background: none;
 
   &:hover {
     background-color: $accent-orange;

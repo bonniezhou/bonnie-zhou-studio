@@ -40,6 +40,8 @@ function Components() {
 
 const Button = (text) => <button>{text}</button>
 
+const MenuButton = (text) => <button className='menuButton'>{text}</button>
+
 const IconButton = (icon) => <button className='iconButton material-icons'>{icon}</button>
 
 function Divider() {
@@ -48,4 +50,4 @@ function Divider() {
   );
 }
 
-export {Components, Button, IconButton, Divider};
+export {Components, Button, MenuButton, IconButton, Divider};

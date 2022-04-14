@@ -1,11 +1,17 @@
-import './NavBar.css';
-import { IconButton } from './Components';
+import './NavBar.scss';
+import { IconButton, MenuButton } from './Components';
 
 function NavBar() {
   return (
     <div className='navBar'>
-      NavBar
-      {IconButton('menu')}
+      <div>
+        {IconButton('menu')}
+      </div>
+      <div>
+        {MenuButton('Shop')}
+        {MenuButton('About')}
+        {IconButton('shopping_cart')}
+      </div>
     </div>
   );
 }
