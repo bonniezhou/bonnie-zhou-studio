@@ -3,6 +3,7 @@ import './Components.scss';
 function Components() {
   return (
     <div>
+      <Divider/>
       <div className='brandColors'>
         <div className='lightOrange'></div>
         <div className='lightBlue'></div>
@@ -44,10 +45,12 @@ const MenuButton = (text) => <button className='menuButton'>{text}</button>
 
 const IconButton = (icon) => <button className='iconButton material-icons'>{icon}</button>
 
+const TextField = (placeholder) => <input className='textField' type='text' placeholder={placeholder}/>
+
 function Divider() {
   return (
     <div className="divider"></div>
   );
 }
 
-export {Components, Button, MenuButton, IconButton, Divider};
+export {Components, Button, MenuButton, IconButton, TextField, Divider};
