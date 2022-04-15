@@ -1,6 +1,7 @@
 .navBar {
   box-sizing: border-box;
-  padding: .75rem;
+  height: fit-content;
+  padding: 0 3rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -10,4 +11,14 @@
     display: flex;
     align-items: center;
   }
+
+  .navStart {
+    .iconButton {
+      display: none;
+    }
+  }
+}
+
+.navButton {
+  background-color: transparent;
 }

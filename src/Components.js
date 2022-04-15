@@ -1,4 +1,5 @@
 import './Components.scss';
+import LogoSvg from './Logo.js';
 
 function Components() {
   return (
@@ -12,6 +13,7 @@ function Components() {
         <div className='darkBlue'></div>
         <div className='darkViolet'></div>
       </div>
+      <Logo/>
       <h1>H1 — Title (Alice)</h1>
       <h2>H2 — Subheader (Raleway)</h2>
       <h3>H3 — Special text (Alice)</h3>
@@ -39,9 +41,12 @@ function Components() {
   );
 }
 
-const Button = (text) => <button>{text}</button>
+const Logo = () => 
+  <div className='logo'>
+    <div className='logoSvg'><LogoSvg /></div>
+  </div>
 
-const MenuButton = (text) => <button className='menuButton'>{text}</button>
+const Button = (text) => <button>{text}</button>
 
 const IconButton = (icon) => <button className='iconButton material-icons'>{icon}</button>
 
@@ -53,4 +58,4 @@ function Divider() {
   );
 }
 
-export {Components, Button, MenuButton, IconButton, TextField, Divider};
+export {Components, Button, IconButton, Logo, TextField, Divider};
