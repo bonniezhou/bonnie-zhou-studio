@@ -51,12 +51,14 @@ h3 {
 }
 
 button {
+  box-sizing: border-box;
+  height: 3rem;
   cursor: pointer;
-  padding: .5rem .75rem;
+  padding: 0 1rem;
   margin: .5rem;
   background: none;
   border: none;
-  border-radius: .25rem;
+  border-radius: .5rem;
   font-family: 'Raleway', 'Quicksand', sans-serif;
   font-weight: 600;
   font-size: 1rem;
@@ -88,18 +90,24 @@ button {
 }
 
 .textField {
+  box-sizing: border-box;
   width: 20rem;
+  height: 3rem;
   margin: .5rem;
   font-family: Raleway;
   font-size: 1rem;
+  font-weight: 600;
+  color: $dark-blue;
   padding: .75rem;
+  border: .25rem solid transparent;
   background-color: $light-orange;
   outline: none;
-  // &:focus-visible {
-  //   background-color: $light-blue;
-  // }
+  transition: border-color $short-animation-duration $standard-easing;
+  &:focus-visible {
+    border-color: $accent-pink;
+  }
   &::placeholder {
-    color: $dark-blue;
+    color: rgba($dark-blue, .5);
   }
 }
 
