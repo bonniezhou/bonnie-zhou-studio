@@ -10,19 +10,21 @@
 // $black-bean: #3C1607ff;
 // $black-olive: #4A4641ff;
 
-$raisin-black: #1D1B20ff;
+$raisin-black: rgb(24, 22, 27);
 $dark-sienna: #28120Bff;
-$old-lavender: #62606Eff;
-$opal: #BBCDCEff;
+$lavender: rgb(98, 92, 133);
+$columbia-blue: rgb(210, 235, 235);
 $eggshell: #F7EFDBff;
 
-$columbia-blue: #C7D9D9ff;
+//less saturated alternatives
+$old-lavender: rgb(107, 103, 131);;
+$opal: rgb(193, 214, 215);
 $antique-white: #F7E8D4ff;
 
 $dark: $raisin-black;
 $dark-accent: $dark-sienna;
-$accent: $old-lavender;
-$light-accent: $opal;
+$accent: $lavender;
+$light-accent: $columbia-blue;
 $light: $eggshell;
 
 $short-animation-duration: 120ms;
