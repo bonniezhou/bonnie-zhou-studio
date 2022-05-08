@@ -9,23 +9,14 @@
     margin: 0 4px;
     border: 1px solid black;
 
-    &.lightOrange {
-      background-color: $light-orange;
+    &.light {
+      background-color: $light;
     }
-    &.lightBlue {
-      background-color: $light-blue;
+    &.dark {
+      background-color: $dark;
     }
-    &.accentOrange {
-      background-color: $accent-orange;
-    }
-    &.accentPink {
-      background-color: $accent-pink;
-    }
-    &.darkBlue {
-      background-color: $dark-blue;
-    }
-    &.darkViolet {
-      background-color: $dark-violet;
+    &.accent {
+      background-color: $accent;
     }
   }
 }
@@ -45,31 +36,43 @@ h2 {
 }
 
 h3 {
-  max-width: 55vw;
+  max-width: 50rem;
   font-family: 'Alice', 'Lora', serif;
   font-weight: 500;
-  font-size: 1.75rem;
+  font-size: 2.5rem;
+}
+
+h4 {
+  max-width: 50rem;
+  font-family: 'Alice', 'Lora', serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+p {
+  max-width: 40rem;
 }
 
 .logo {
-  $logo-svg-height: 4rem;
+  $logo-svg-height: 5rem;
 
   width: fit-content;
   height: $logo-svg-height;
-  padding: calc($logo-svg-height*.5) 0;
+  padding: calc($logo-svg-height*.25) 0;
   margin: .5rem;
 
-  background-image: url(logo-bg2.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: 50%;
+  // background-image: url(logo-bg2.svg);
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // background-position: 50%;
 
   .logoSvg {
     height: 100%;
 
     svg {
       height: 100%;
-      fill: $accent-orange;
+      fill: $light;
     }
   }
 }
@@ -87,15 +90,15 @@ button {
   font-weight: 600;
   font-size: 1rem;
   text-transform: uppercase;
-  color: $accent-orange;
-  background-color: $dark-blue;
+  color: $light;
+  background-color: $accent;
   transition: color $short-animation-duration $standard-easing,
     background-color $short-animation-duration $standard-easing;
 
   &:hover, &:focus {
     outline: none;
-    color: $dark-blue;
-    background-color: $accent-orange;
+    color: $accent;
+    background-color: $light;
   }
 }
 
@@ -114,23 +117,23 @@ button {
   font-family: Raleway;
   font-size: 1rem;
   font-weight: 600;
-  color: $dark-blue;
+  color: $accent;
   padding: .75rem;
   border: .25rem solid transparent;
-  background-color: $light-orange;
+  background-color: $light;
   outline: none;
   transition: border-color $short-animation-duration $standard-easing;
   &:focus-visible {
-    border-color: $accent-pink;
+    border-color: $accent;
   }
   &::placeholder {
-    color: rgba($dark-blue, .5);
+    color: rgba($accent, .5);
   }
 }
 
 .divider {
   width: 50vw;
   height: 0;
-  border-bottom: 2px solid $light-orange;
+  border-bottom: 2px solid $light;
   margin: 1rem;
 }
