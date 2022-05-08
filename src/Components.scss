@@ -29,6 +29,7 @@ h1 {
 }
 
 h2 {
+  margin: .5rem;
   font-family: 'Raleway';
   text-transform: uppercase;
   font-weight: 600;
@@ -36,23 +37,23 @@ h2 {
 }
 
 h3 {
+  margin: .5rem;
   max-width: 50rem;
   font-family: 'Alice', 'Lora', serif;
   font-weight: 500;
   font-size: 2.5rem;
+  text-align: center;
 }
 
 h4 {
   color: $light-accent;
   max-width: 50rem;
-  font-family: 'Alice', 'Lora', serif;
-  font-weight: 500;
-  font-size: 1.3rem;
   font-style: italic;
+  font-weight: 500;
 }
 
 p {
-  max-width: 40rem;
+  max-width: 50rem;
 }
 
 .logo {
