@@ -1,31 +1,23 @@
-// $cinereous: #A1888Bff;
-// $bone: #DACCB9ff;
-// $catawba: #603640ff;
-// $outer-space-crayola: #303835ff;
-// $black-coral: #55647Fff;
+$rich-black: #101421;
+$vermilion: #CB4430;
+$yellow-orange: #FFB847;
+$lilac: #b5a3bd;
+$phthalo-blue: #22188e;
+$wheat: #f5edd3;
 
-// $platinum: #EBE3E0ff;
-// $silver-pink: #CBAA9Cff;
-// $black: #020201ff;
-// $black-bean: #3C1607ff;
-// $black-olive: #4A4641ff;
+$smoky-black: #190a07ff;
+$metallic-seaweed: #00858eff;
+$chestnut: #94483bff;
+$deep-taupe: #745a5dff;
+$snow: #FFFCFA;
+$blanched-almond: #ffedcbff;
 
-$raisin-black: rgb(24, 22, 27);
-$dark-sienna: #28120Bff;
-$lavender: rgb(98, 92, 133);
-$columbia-blue: rgb(210, 235, 235);
-$eggshell: #F7EFDBff;
-
-//less saturated alternatives
-$old-lavender: rgb(107, 103, 131);;
-$opal: rgb(193, 214, 215);
-$antique-white: #F7E8D4ff;
-
-$dark: $raisin-black;
-$dark-accent: $dark-sienna;
-$accent: $lavender;
-$light-accent: $columbia-blue;
-$light: $eggshell;
+$text: $smoky-black;
+$text-complimentary: $metallic-seaweed;
+$accent: $deep-taupe;
+$accent-complimentary: $chestnut;
+$background: $snow;
+$background-complimentary: $blanched-almond;
 
 $short-animation-duration: 120ms;
 $standard-easing: cubic-bezier(0.4, 0.0, 0.2, 1);

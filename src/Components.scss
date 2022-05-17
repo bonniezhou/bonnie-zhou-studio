@@ -9,11 +9,11 @@
     margin: 0 4px;
     border: 1px solid black;
 
-    &.light {
-      background-color: $light;
+    &.text {
+      background-color: $text;
     }
-    &.dark {
-      background-color: $dark;
+    &.background {
+      background-color: $background;
     }
     &.accent {
       background-color: $accent;
@@ -34,6 +34,7 @@ h2 {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1rem;
+  color: $accent;
 }
 
 h3 {
@@ -43,13 +44,14 @@ h3 {
   font-weight: 500;
   font-size: 2.5rem;
   text-align: center;
+  color: $accent-complimentary;
 }
 
 h4 {
-  color: $light-accent;
   max-width: 50rem;
   font-style: italic;
   font-weight: 500;
+  color: $text-complimentary;
 }
 
 p {
@@ -69,7 +71,7 @@ p {
 
     svg {
       height: 100%;
-      fill: $light;
+      fill: $accent;
     }
   }
 }
@@ -86,16 +88,17 @@ button {
   font-family: 'Raleway', 'Quicksand', sans-serif;
   font-weight: 600;
   font-size: 1rem;
+  letter-spacing: .5px;
   text-transform: uppercase;
-  color: $light;
+  color: $background;
   background-color: $accent;
   transition: color $short-animation-duration $standard-easing,
     background-color $short-animation-duration $standard-easing;
 
   &:hover, &:focus {
     outline: none;
-    color: $accent;
-    background-color: $light;
+    color: $background-complimentary;
+    background-color: $accent-complimentary;
   }
 }
 
@@ -103,6 +106,7 @@ button {
   font-family: 'Material Icons Outlined';
   border-radius: 100%;
   padding: .75rem;
+  color: $accent;
   background: none;
 }
 
@@ -116,12 +120,13 @@ button {
   font-weight: 600;
   color: $accent;
   padding: .75rem;
-  border: .25rem solid transparent;
-  background-color: $light;
+  border: .125rem solid $accent;
+  background-color: $background;
   outline: none;
   transition: border-color $short-animation-duration $standard-easing;
   &:focus-visible {
-    border-color: $accent;
+    border-color: $accent-complimentary;
+    background-color: $background-complimentary;
   }
   &::placeholder {
     color: rgba($accent, .5);
@@ -131,6 +136,6 @@ button {
 .divider {
   width: 50vw;
   height: 0;
-  border-bottom: 2px solid $light;
+  border-bottom: 2px solid $text;
   margin: 1rem;
 }

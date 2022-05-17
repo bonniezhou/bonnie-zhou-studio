@@ -7,8 +7,8 @@ function Components() {
 
       <Divider/>
       <div className='brandColors'>
-        <div className='light'></div>
-        <div className='dark'></div>
+        <div className='text'></div>
+        <div className='background'></div>
         <div className='accent'></div>
       </div>
       <h1>H1 — Title (Alice)</h1>
