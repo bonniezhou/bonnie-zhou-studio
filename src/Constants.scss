@@ -1,23 +1,44 @@
 $rich-black: #101421;
+$phthalo-blue: #22188e;
 $vermilion: #CB4430;
 $yellow-orange: #FFB847;
-$lilac: #b5a3bd;
-$phthalo-blue: #22188e;
 $wheat: #f5edd3;
+$lilac: #b5a3bd;
 
 $smoky-black: #190a07ff;
 $metallic-seaweed: #00858eff;
 $chestnut: #94483bff;
 $deep-taupe: #745a5dff;
-$snow: #FFFCFA;
 $blanched-almond: #ffedcbff;
+$snow: #FFFCFA;
 
-$text: $smoky-black;
-$text-complimentary: $metallic-seaweed;
-$accent: $deep-taupe;
-$accent-complimentary: $chestnut;
-$background: $snow;
-$background-complimentary: $blanched-almond;
+$rich-black: #101421;
+$persian-indigo: #2f198cff;
+$cedar-chest: #c2533aff;
+$yellow-orange: #fcb23cff;
+$floral-white: #fff9efff;
+$pink-lavender: #e7b9d9ff;
+
+// $text: $smoky-black;
+// $text-complimentary: $metallic-seaweed;
+// $accent: $deep-taupe;
+// $accent-complimentary: $chestnut;
+// $background: $snow;
+// $background-complimentary: $blanched-almond;
+
+// $text: $rich-black;
+// $text-complimentary: $phthalo-blue;
+// $accent: $vermilion;
+// $accent-complimentary: $yellow-orange;
+// $background: $wheat;
+// $background-complimentary: $lilac;
+
+$text: $rich-black;
+$text-complimentary: $persian-indigo;
+$accent: $cedar-chest;
+$accent-complimentary: $yellow-orange;
+$background: $floral-white;
+$background-complimentary: $pink-lavender;
 
 $short-animation-duration: 120ms;
 $standard-easing: cubic-bezier(0.4, 0.0, 0.2, 1);
